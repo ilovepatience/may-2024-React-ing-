@@ -32,12 +32,11 @@ type  IPropType = {
     img: string;
     thumbnail: string;
 
-    children?: React.ReactNode;
 }
 
 
 const Products: FC<IPropType> = (props) => {
-    let {children , id, title,description, category, barcode, availabilityStatus, brand, date, comment, createdAt, depth, sku, height, img, discountPercentage, minimumOrderQuantity, qrCode, price, rating, ratingReview, reviewerEmail, reviewerName, shippingInformation, warrantyInformation,  tags, stock, thumbnail, width, weight, updatedAt, returnPolicy} = props;
+    let { id, title,description, category, barcode, availabilityStatus, brand, date, comment, createdAt, depth, sku, height, img, discountPercentage, minimumOrderQuantity, qrCode, price, rating, ratingReview, reviewerEmail, reviewerName, shippingInformation, warrantyInformation,  tags, stock, thumbnail, width, weight, updatedAt, returnPolicy} = props;
     return (
         <div>
             <h3>ID - {id}</h3>
